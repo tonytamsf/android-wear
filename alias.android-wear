@@ -14,4 +14,4 @@ alias awstep2="adb connect localhost:4444"
 
 # Start forwarding adb debug to the USB phone device
 # -------------------------------------------------------------
-alias awstep1="adb forward tcp:4445 localabstract:/adb-hub"
+alias awstep1="adb forward tcp:4444 localabstract:/adb-hub"
