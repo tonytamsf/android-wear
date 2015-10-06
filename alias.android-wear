@@ -1,0 +1,6 @@
+# Double check the devices are ready
+alias awdevices="adb -s localhost:4444 -e devices"
+# Connect to the wearable
+alias awstep2="adb connect localhost:4444"
+# Start forwarding adb debug to the USB phone device
+alias awstep1="adb forward tcp:4445 localabstract:/adb-hub"
