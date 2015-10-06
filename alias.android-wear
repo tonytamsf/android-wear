@@ -1,6 +1,18 @@
 # Double check the devices are ready
+#
+# * daemon not running. starting it now on port 5037 *
+# * daemon started successfully *
+# List of devices attached
+# e514dab9	device
+# localhost:4444	device
+# -------------------------------------------------------------
 alias awdevices="adb -s localhost:4444 -e devices"
+
 # Connect to the wearable
+# connected to localhost:4444
+# -------------------------------------------------------------
 alias awstep2="adb connect localhost:4444"
+
 # Start forwarding adb debug to the USB phone device
-alias awstep1="adb forward tcp:4445 localabstract:/adb-hub"
+# -------------------------------------------------------------
+alias awstep1="adb forward tcp:4444 localabstract:/adb-hub"
