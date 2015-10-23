@@ -16,3 +16,8 @@ alias awstep2="adb connect localhost:4444"
 # Start forwarding adb debug to the USB phone device
 # -------------------------------------------------------------
 alias awstep1="adb forward tcp:4444 localabstract:/adb-hub"
+
+# Take screenshot
+alias android-screenshot-usb='adb -d shell /system/bin/screencap -p /sdcard/screenshot.png;adb -d pull /sdcard/screenshot.png screenshot.png'
+alias android-screenshot-wear='adb -s localhost:4444 shell /system/bin/screencap /sdcard/screenshot.png;adb -s localhost:4444  pull /sdcard/screenshot.png screenshot.png'
+
